@@ -14,22 +14,20 @@ import sys
 #
 
 def lonelyinteger(a):
-    # create a dictionary to store the number of occurrences of each number
-    d = {}
+    # Write your code here
+    dict = {}
     for i in a:
-        if i in d:
-            d[i] += 1
+        if i in dict:
+            dict[i] += 1
         else:
-            d[i] = 1
-
-    # find the number that occurs only once
-    for i in d:
-        if d[i] == 1:
+            dict[i] = 1
+    for i in dict:
+        if dict[i] == 1:
             return i
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
+        
     n = int(input().strip())
 
     a = list(map(int, input().rstrip().split()))
