@@ -1,13 +1,5 @@
-a = {}
 
-print(a)
+print(range(5-1, -1, -1))
 
-a[1] = 99
-
-a[5] = 100
-
-print(a)
-
-for i in a:
+for i in range(4, 0, -1):
     print(i)
-    print(a[i])
